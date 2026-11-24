@@ -1,17 +1,16 @@
 import LinkCard from "@/components/LinkCard";
 import ProfileHeader from "@/components/ProfileHeader";
 
-// 보여주기용 더미 값 — 나중에 실제 내용으로 교체
 const profile = {
-  name: "홍길동",
-  bio: "더미 소개글입니다. 나중에 바꿔주세요.",
-  photoUrl: "/avatar-dummy.svg",
+  name: "김종덕",
+  bio: "파이썬 개발자 | iOS앱개발자 | AI 개발자",
+  photoUrl: "/profile.png",
 };
 
 const links = [
-  { title: "GitHub", url: "https://github.com" },
-  { title: "Blog", url: "https://example.com/blog" },
-  { title: "Mail", url: "mailto:hello@example.com" },
+  { title: "깃허브", url: "https://github.com/papasmf1" },
+  { title: "블로그", url: "https://blog.naver.com/papasmf1004" },
+  { title: "이메일", url: "mailto:papasmf1@gmail.com" },
 ];
 
 export default function Home() {
