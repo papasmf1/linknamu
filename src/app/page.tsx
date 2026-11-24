@@ -15,13 +15,13 @@ const links = [
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center px-5 py-12 sm:py-16">
+    <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center px-7 py-16 sm:py-24">
       <ProfileHeader
         name={profile.name}
         bio={profile.bio}
         photoUrl={profile.photoUrl}
       />
-      <ul className="mt-10 flex w-full flex-col gap-5">
+      <ul className="mt-12 flex w-full flex-col gap-4">
         {links.map((link) => (
           <li key={link.title}>
             <LinkCard title={link.title} url={link.url} />
