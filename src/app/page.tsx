@@ -1,17 +1,12 @@
-import LinkCard from "@/components/LinkCard";
+import LinkList from "@/components/LinkList";
 import ProfileHeader from "@/components/ProfileHeader";
+import { links } from "@/lib/links";
 
 const profile = {
   name: "김종덕",
   bio: "파이썬 개발자 | iOS앱개발자 | AI 개발자",
   photoUrl: "/profile.png",
 };
-
-const links = [
-  { title: "깃허브", url: "https://github.com/papasmf1" },
-  { title: "블로그", url: "https://blog.naver.com/papasmf1004" },
-  { title: "이메일", url: "mailto:papasmf1@gmail.com" },
-];
 
 export default function Home() {
   return (
@@ -21,13 +16,7 @@ export default function Home() {
         bio={profile.bio}
         photoUrl={profile.photoUrl}
       />
-      <ul className="mt-12 flex w-full flex-col gap-4">
-        {links.map((link) => (
-          <li key={link.title}>
-            <LinkCard title={link.title} url={link.url} />
-          </li>
-        ))}
-      </ul>
+      <LinkList links={links} />
     </main>
   );
 }
